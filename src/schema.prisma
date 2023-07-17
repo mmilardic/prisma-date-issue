@@ -1,0 +1,16 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_PRISMA_URL")
+}
+
+model users {
+  id         String   @id @default(dbgenerated("public.uuid_generate_v4()")) @db.Uuid
+  name       String
+  created_at DateTime @default(dbgenerated("timezone('utc'::text, now())")) @db.Timestamp(6)
+  updated_at DateTime @db.Timestamp(6)
+}

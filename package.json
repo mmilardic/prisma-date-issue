@@ -1,0 +1,22 @@
+{
+    "name": "@prisma-issue-reproduction/prisma",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Prisma issue reproduction",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@prisma/client": "5.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.16.19",
+        "prisma": "5.0.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.6"
+    },
+    "engines": {
+        "node": "18.16.0"
+    },
+    "prisma": {
+        "schema": "./src/schema.prisma"
+    }
+}

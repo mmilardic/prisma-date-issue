@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "noUncheckedIndexedAccess": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "outDir": "dist",
+        "lib": ["ES2022"],
+        "target": "ES2022",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "types": ["node"],
+        "skipLibCheck": true
+    }
+}
